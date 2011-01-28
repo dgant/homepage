@@ -1,0 +1,79 @@
+body{
+	background-color: #606060;
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+	text-align: left;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: small;
+	color: #202020;
+}
+
+h1{
+	font-size: large;
+	font-weight: bold;
+}
+
+h2{
+	font-size: small;
+	font-weight: bold;
+	margin-left: 48px;
+}
+
+p,h3,h4,h5,h6{
+	margin-left: 64px;
+	margin-right:64px;
+}
+
+ul{
+	margin-left: 48px;
+	margin-right:64px;
+}
+
+a{
+	background-color: inherit;
+	color: #404080;
+}
+
+img.horiz_caption{
+	vertical-align: middle;
+}
+
+#container{
+	position: relative;
+	border-width: 1px;
+	border-color: #303030;
+	border-style: solid;
+
+	padding: 16px 16px 16px 16px;
+
+	background-color: #A0A0FF;
+	color: inherit;
+
+	text-align: justify;
+	width: 960px;
+
+	min-height: 500px;
+}
+
+#truebody{
+}
+
+#banner{
+	text-align: center;
+	font-size: large;
+	//background-image: url(gfx/bannerloop.jpg);
+	background-repeat: repeat-x;
+	height: 40px;
+}
+
+#nav{
+	text-align:center;
+}
+
+#horizontal_caption{
+	margin-left: 16px;
+}
+
+#centered_paragraph{
+	text-align: center;
+}

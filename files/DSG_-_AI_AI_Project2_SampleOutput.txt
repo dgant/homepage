@@ -1,0 +1,413 @@
+Assignment #2
+By Dan Gant (dsg2110@columbia.edu)
+For COMS W4701 Artificial Intelligence
+Prof. Stolfo
+
+This program will create three random 15-Puzzles, shuffled 
+by 15, 25, and 35 random moves, respectively. The actual   
+solutions may require substantially fewer moves to solve.  
+
+To solve these puzzles, the program will use ten methods:  
+
+	- A*, using as a heuristic the sum of the orthogonal     
+	  displacements of every tile                            
+	- Greedy search with the same heuristic                  
+	- A*, using as a heuristic the number of displaced tiles 
+	- Greedy search with the same heuristic                  
+	- Uniform-cost search                                    
+	- Iterative deepening depth-first search                 
+	- Breadth-first search                                   
+	- Depth-first search up to depths of N/2, N/3, and N/4,  
+	  where N is the number of random moves made on the board
+
+Press [ENTER] to begin.
+####################################################
+# Solving following board, randomized to 15 moves: #
+####################################################
+
+1  2  3  4  
+5  6  7  8  
+9  10 11 12 
+13 14 _  15 
+
+
+=====================================================================
+Attempting to solve by A* using Summed Manhattan Distance:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 24
+	Nodes on open list: 13
+	Nodes on closed list: 11
+A* complete.
+
+
+=====================================================================
+Attempting to solve by Greedy search using Summed Manhattan Distance:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 15
+	Nodes on open list: 8
+	Nodes on closed list: 7
+Greedy search complete.
+
+
+=====================================================================
+Attempting to solve by A* using Misplaced Pieces Count:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 22
+	Nodes on open list: 13
+	Nodes on closed list: 9
+A* complete.
+
+
+=====================================================================
+Attempting to solve by Greedy search using Misplaced Pieces Count:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 22
+	Nodes on open list: 13
+	Nodes on closed list: 9
+Greedy search complete.
+
+
+=====================================================================
+Attempting to solve by iterative deepening depth-first search:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 4
+	Nodes on open list: 3
+	Nodes on closed list: 1
+ID-DFS complete.
+
+
+=====================================================================
+Attempting to solve by uniform-cost search:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 6
+	Nodes on open list: 4
+	Nodes on closed list: 2
+UCS complete.
+
+
+=====================================================================
+Attempting to solve by breadth-first search:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 4
+	Nodes on open list: 3
+	Nodes on closed list: 1
+BFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 7 moves:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 4
+	Nodes on open list: 3
+	Nodes on closed list: 1
+DFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 5 moves:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 48
+	Nodes on open list: 1
+	Nodes on closed list: 47
+DFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 3 moves:
+Search completed. Solution found:
+(1,   0)  
+Search results:
+	Nodes searched: 4
+	Nodes on open list: 3
+	Nodes on closed list: 1
+DFS complete.
+
+
+####################################################
+# Solving following board, randomized to 25 moves: #
+####################################################
+
+1  2  4  _  
+5  6  3  8  
+9  11 7  12 
+13 10 14 15 
+
+
+=====================================================================
+Attempting to solve by A* using Summed Manhattan Distance:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 726
+	Nodes on open list: 348
+	Nodes on closed list: 378
+A* complete.
+
+
+=====================================================================
+Attempting to solve by Greedy search using Summed Manhattan Distance:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 676
+	Nodes on open list: 323
+	Nodes on closed list: 353
+Greedy search complete.
+
+
+=====================================================================
+Attempting to solve by A* using Misplaced Pieces Count:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 3927
+	Nodes on open list: 2047
+	Nodes on closed list: 1880
+A* complete.
+
+
+=====================================================================
+Attempting to solve by Greedy search using Misplaced Pieces Count:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 3927
+	Nodes on open list: 2047
+	Nodes on closed list: 1880
+Greedy search complete.
+
+
+=====================================================================
+Attempting to solve by iterative deepening depth-first search:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 126
+	Nodes on open list: 6
+	Nodes on closed list: 120
+ID-DFS complete.
+
+
+=====================================================================
+Attempting to solve by uniform-cost search:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 528
+	Nodes on open list: 275
+	Nodes on closed list: 253
+UCS complete.
+
+
+=====================================================================
+Attempting to solve by breadth-first search:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 531
+	Nodes on open list: 277
+	Nodes on closed list: 254
+BFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 12 moves:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 1521
+	Nodes on open list: 7
+	Nodes on closed list: 1514
+DFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 8 moves:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (0,   1)  (-1,  0)  (0,   1)  
+(1,   0)  (1,   0)  
+Search results:
+	Nodes searched: 77
+	Nodes on open list: 8
+	Nodes on closed list: 69
+DFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 6 moves:
+Search completed. No solution found
+Search results:
+	Nodes searched: 95
+	Nodes on open list: 0
+	Nodes on closed list: 95
+DFS complete.
+
+
+####################################################
+# Solving following board, randomized to 35 moves: #
+####################################################
+
+1  2  3  _  
+5  6  7  4  
+9  10 15 8  
+13 14 12 11 
+
+
+=====================================================================
+Attempting to solve by A* using Summed Manhattan Distance:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 4654
+	Nodes on open list: 2264
+	Nodes on closed list: 2390
+A* complete.
+
+
+=====================================================================
+Attempting to solve by Greedy search using Summed Manhattan Distance:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 4651
+	Nodes on open list: 2262
+	Nodes on closed list: 2389
+Greedy search complete.
+
+
+=====================================================================
+Attempting to solve by A* using Misplaced Pieces Count:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 2848
+	Nodes on open list: 1491
+	Nodes on closed list: 1357
+A* complete.
+
+
+=====================================================================
+Attempting to solve by Greedy search using Misplaced Pieces Count:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 2848
+	Nodes on open list: 1491
+	Nodes on closed list: 1357
+Greedy search complete.
+
+
+=====================================================================
+Attempting to solve by iterative deepening depth-first search:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 409
+	Nodes on open list: 5
+	Nodes on closed list: 404
+ID-DFS complete.
+
+
+=====================================================================
+Attempting to solve by uniform-cost search:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 577
+	Nodes on open list: 304
+	Nodes on closed list: 273
+UCS complete.
+
+
+=====================================================================
+Attempting to solve by breadth-first search:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 423
+	Nodes on open list: 219
+	Nodes on closed list: 204
+BFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 17 moves:
+Search completed. Solution found:
+(-1,  0)  (0,   1)  (1,   0)  (0,   1)  (0,   1)  
+(-1,  0)  (0,  -1)  (1,   0)  (0,  -1)  (-1,  0)  
+(0,  -1)  (1,   0)  (0,   1)  (0,   1)  (0,   1)  
+
+Search results:
+	Nodes searched: 59314
+	Nodes on open list: 9
+	Nodes on closed list: 59305
+DFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 11 moves:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 3355
+	Nodes on open list: 5
+	Nodes on closed list: 3350
+DFS complete.
+
+
+=====================================================================
+Attempting to solve by depth-first search
+limited to a depth of 8 moves:
+Search completed. Solution found:
+(0,   1)  (0,   1)  (0,   1)  (-1,  0)  (0,  -1)  
+(1,   0)  (0,   1)  
+Search results:
+	Nodes searched: 21
+	Nodes on open list: 5
+	Nodes on closed list: 16
+DFS complete.
+
+
+Press [ENTER] to exit.
